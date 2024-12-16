@@ -1,5 +1,5 @@
 [versions]
-agp = "8.3.1"
+agp = "8.7.3"
 kotlin = "1.9.0"
 coreKtx = "1.10.1"
 junit = "4.13.2"
@@ -17,6 +17,7 @@ firebaseAuth = "22.3.1"
 navigationFragmentKtx = "2.6.0"
 navigationUiKtx = "2.6.0"
 firebaseDatabase = "20.3.1"
+impress = "0.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,7 @@ firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+impress = { group = "com.google.ar", name = "impress", version.ref = "impress" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

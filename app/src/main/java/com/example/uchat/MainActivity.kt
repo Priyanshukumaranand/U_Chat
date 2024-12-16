@@ -64,15 +64,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.id.logout){
-            mAuth.signOut()
-            val intent=Intent(this@MainActivity,Login::class.java)
-            finish()
-            startActivity(intent)
-            return true
+        return when (item.itemId) {
+            R.id.edit_profile -> {  // Assuming you have this ID in your menu.xml
+                val intent = Intent(this, EditProfile::class.java)
+                startActivity(intent)
+                true
+            }
+            R.id.logout -> {
+                mAuth.signOut()
+                val intent = Intent(this@MainActivity, Login::class.java)
+                finish()
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
-        return true
-        return super.onOptionsItemSelected(item)
     }
+
 
 }
