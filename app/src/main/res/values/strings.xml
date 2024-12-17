@@ -43,4 +43,5 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="default_web_client_id">823002862619-qb38qgi0h9i9jn8et4cahmpcjhh4ucek.apps.googleusercontent.com</string>
+    <string name="open_camera">Open Camera</string>
 </resources>
